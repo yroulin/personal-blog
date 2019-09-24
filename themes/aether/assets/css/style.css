@@ -384,6 +384,21 @@ footer {
     padding: 2em 0;
     margin: 2em 0 0 0;
 }
+.img-sm {
+    max-height: 300px;
+  }
+  
+  .img-sm img{
+    max-height:300px
+  }
+  
+  .img-lg {
+    max-height: 500px;
+  }
+  
+  .img-lg img{
+    max-height:500px
+  }
 @media screen and (pointer: coarse) {
  .card-hover {
     transform: scale(0.95);
