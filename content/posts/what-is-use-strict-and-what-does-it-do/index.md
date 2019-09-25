@@ -6,6 +6,7 @@ categories: ["JS"]
 resources:
 - name: featuredImage
   src: "js.jpg"
+  params: "JavaScript logo"
 ---
 
 The keyword <strong>'use strict'</strong> means that the JavaScript engine will be pickier about certain things we do when we write code.
