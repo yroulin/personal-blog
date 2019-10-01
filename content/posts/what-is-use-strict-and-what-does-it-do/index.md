@@ -1,5 +1,5 @@
 ---
-title: "What Is Use Strict and What Does It Do"
+title: "JS - What Is Use Strict and What Does It Do"
 date: 2019-09-23T22:34:52-06:00
 draft: false
 categories: ["JS"]
