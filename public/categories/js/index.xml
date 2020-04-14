@@ -1,0 +1,46 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JS - aroul.in</title>
+    <link>https://aroul.in/categories/js/</link>
+    <description>Recent content in JS on aroul.in</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Apr 2020 22:15:08 -0600</lastBuildDate>
+    
+        <atom:link href="https://aroul.in/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Array.prototype.Helpers</title>
+      <link>https://aroul.in/posts/js-array-helper-methods/</link>
+      <pubDate>Mon, 13 Apr 2020 22:15:08 -0600</pubDate>
+      
+      <guid>https://aroul.in/posts/js-array-helper-methods/</guid>
+      <description>Array Helper Methods are very helpful when you need to manipulate your data stored in arrays. They make life much easier, so we should know them.
+forEach Helper The forEach() function is used to iterates through all the entries of the array.
+ES5 Example:
+var colors = [&#39;red&#39;,’blue&#39;,&#39;green&#39;];&amp;lt;script&amp;gt;colors.forEach(function(color){console.log(color);});&amp;lt;/script&amp;gt;Output:
+redbluegreenES6 Example:
+&amp;lt;script&amp;gt;colors.forEach(color =&amp;gt; {console.log(color);});&amp;lt;/script&amp;gt;Every Helper The every() method tests whether all elements in the array pass the test implemented by the provided function, example: Check if all the values in the computers array are 16 or over:</description>
+    </item><item>
+      <title>JS - Data Types</title>
+      <link>https://aroul.in/posts/js-data-types/</link>
+      <pubDate>Fri, 27 Sep 2019 14:06:25 -0600</pubDate>
+      
+      <guid>https://aroul.in/posts/js-data-types/</guid>
+      <description>JavaScript has 8 built-in data types (with the latest ECMAScript standard):
+  We have the Primitives ones:
+ Null Boolean Undefined Number BigInt String Symbol    and the Objects.
+  And you can check the type of each data type with the typeof operator:
+let helloMessage = &amp;#34;Hello World&amp;#34;;typeof(helloMessage); //Output: &amp;#34;string&amp;#34;let myAge = 32;typeof(myAge); //Output: &amp;#34;number&amp;#34;const myPerson = {name: &amp;#39;Yves&amp;#39;,age: 32,}typeof(myPerson); //Output: &amp;#34;object&amp;#34;We have also have undefined and undeclared which is basically when you define a variable without a value (the default value is undefined).</description>
+    </item><item>
+      <title>JS - What Is Use Strict and What Does It Do</title>
+      <link>https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/</link>
+      <pubDate>Mon, 23 Sep 2019 22:34:52 -0600</pubDate>
+      
+      <guid>https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/</guid>
+      <description>The keyword &#39;use strict&#39;means that the JavaScript engine will be pickier about certain things we do when we write code.
+It turns on the strict mode operating context wherever you place it (inside of a function will activate strict mode on the function level scope) including:
+ Using a variable before it’s defined now causes an error. It stops you from using words that are reserved for future versions of JS.</description>
+    </item>
+  </channel>
+</rss>

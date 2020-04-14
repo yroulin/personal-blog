@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Array.prototype.Helpers &middot; aroul.in</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  <link href="https://aroul.in/css/concated.min.css" rel="stylesheet">
+  
+  
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://aroul.in" class="nav-text">aroul.in</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://aroul.in" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://aroul.in/categories/js" class="hamburger-menu-overlay-link">Js</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">Array.prototype.Helpers</h1>
+          <p class="post-date">Posted <time datetime="2020-04-13">Apr 13, 2020</time></p>
+        </header>
+        
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://aroul.in/posts/js-array-helper-methods/js-array_hua40877c3b4965d46e5c88c80b25ede12_31633_800x0_resize_q75_lanczos.jpg">
+          <img src="https://aroul.in/posts/js-array-helper-methods/js-array_hua40877c3b4965d46e5c88c80b25ede12_31633_800x0_resize_q75_lanczos.jpg" >
+        </picture>
+        
+        <p>Array Helper Methods are very helpful when you need to manipulate your data stored in arrays. They make life much easier, so we should know them.</p>
+<h1 id="foreach-helper">forEach Helper</h1>
+<p>The forEach() function is used to iterates through all the entries of the array.</p>
+<p>ES5 Example:</p>
+<pre><code>var colors = ['red',’blue','green'];
+</code></pre><pre><code>&lt;script&gt;
+colors.forEach(function(color){
+    console.log(color);
+});
+&lt;/script&gt;
+</code></pre><p><strong>Output</strong>:</p>
+<pre><code>red
+blue
+green
+</code></pre><p>ES6 Example:</p>
+<pre><code>&lt;script&gt;
+colors.forEach(color =&gt; {
+    console.log(color);
+});
+&lt;/script&gt;
+</code></pre><h1 id="every-helper">Every Helper</h1>
+<p>The every() method tests whether <strong>all</strong> elements in the array pass the test implemented by the provided function, example: Check if all the values in the computers array are 16 or over:</p>
+<p>Example:</p>
+<pre><code>const computers = [
+  { name: 'Apple', ram: 24 },
+  { name: 'Compaq', ram: 4 },
+  { name: 'Acer', ram: 32 }
+];
+</code></pre><pre><code>&lt;script&gt;
+computers.every(computer =&gt; {
+    return computer.ram &gt; 16;
+});
+&lt;/script&gt;
+</code></pre><p><strong>Output</strong>:</p>
+<pre><code>false
+</code></pre><p>This returned false since not all the <em>computer.ram</em> values are greater than 16.</p>
+<h1 id="some-helper">Some Helper</h1>
+<p>And the some() method tests whether <strong>any</strong> values in the computers array are 16 or over:</p>
+<p>Example:</p>
+<pre><code>const computers = [
+  { name: 'Apple', ram: 24 },
+  { name: 'Compaq', ram: 4 },
+  { name: 'Acer', ram: 32 }
+];
+</code></pre><pre><code>&lt;script&gt;
+computers.some(computer =&gt; {
+    return computer.ram &gt; 16;
+});
+&lt;/script&gt;
+</code></pre><p><strong>Output</strong>:</p>
+<pre><code>true
+</code></pre><p>This returned true because we have at least one <em>computer.ram</em> value that is greater than 16.</p>
+<h1 id="filter-helper">Filter Helper</h1>
+<p>Filters the list of fruits for those:</p>
+<p>Example:</p>
+<pre><code>const products = [
+  { name: 'cucumber', type: 'vegetable', quantity: 0, price: 1 },
+  { name: 'banana', type: 'fruit', quantity: 10, price: 15 },
+  { name: 'celery', type: 'vegetable', quantity: 30, price: 13 },
+  { name: 'orange', type: 'fruit', quantity: 3, price: 5 }
+];
+</code></pre><pre><code>&lt;script&gt;
+let totalFruits = products.filter(fruit =&gt; {
+    return product.type === 'fruit';
+});
+&lt;/script&gt;
+</code></pre><p>This will return all the <em>products</em> that are type <em>fruit</em>, in this case <strong>banana</strong> and <strong>orange</strong>.</p>
+<h1 id="map-helper">Map Helper</h1>
+<p>The map() method is used to iterate through all the entries of the array, modifies them and returns a new array but the old array is not manipulated. Take in mind that the return keyword is mandatory.</p>
+<p>Example:</p>
+<pre><code>const numbers = [1,2,3];
+</code></pre><pre><code>&lt;script&gt;
+let doubled = numbers.map(number =&gt; {
+    return number * 2;
+});
+&lt;/script&gt;
+</code></pre><p><strong>Output</strong>:</p>
+<pre><code>console.log(numbers):
+(3) [1, 2, 3]
+console.log(doubled):
+(3) [2, 4, 6]
+</code></pre>
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://aroul.in/posts/js-data-types/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://aroul.in/posts/js-data-types/js.jpg">
+      <img src="https://aroul.in/posts/js-data-types/js.jpg" class="card-img" >
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">JS - Data Types</h2>
+    <p class="card-text">JavaScript has 8 built-in data types (with the latest ECMAScript standard):
+  We have the Primitives ones:
+ Null Boolean Undefined Number BigInt String Symbol    and the Objects.
+  And you can check the type of each data type with the typeof operator:
+let helloMessage = &#34;Hello World&#34;;typeof(helloMessage); //Output: &#34;string&#34;let myAge = 32;typeof(myAge); //Output: &#34;number&#34;const myPerson = {name: &#39;Yves&#39;,age: 32,}typeof(myPerson); //Output: &#34;object&#34;We have also have undefined and undeclared which is basically when you define a variable without a value (the default value is undefined).</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-09-27 927:00">Sep 27, 2019</time></p>
+      <p>#JS </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://aroul.in" class="card home-card" style="background-image: url( https://aroul.in/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://aroul.in/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>

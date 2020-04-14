@@ -1,22 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/coding/</loc>
-    <lastmod>2019-09-06T10:34:23-06:00</lastmod>
+    <loc>https://aroul.in/posts/js-array-helper-methods/</loc>
+    <lastmod>2020-04-13T22:15:08-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://aroul.in/categories/</loc>
+    <lastmod>2020-04-13T22:15:08-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://aroul.in/categories/js/</loc>
+    <lastmod>2020-04-13T22:15:08-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://aroul.in/posts/</loc>
+    <lastmod>2020-04-13T22:15:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aroul.in/posts/js-data-types/</loc>
+    <lastmod>2019-09-27T14:06:25-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/</loc>
+    <lastmod>2019-09-23T22:34:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aroul.in/</loc>
+    <lastmod>2018-04-27T09:46:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aroul.in/tags/</loc>
   </url>
   
 </urlset>

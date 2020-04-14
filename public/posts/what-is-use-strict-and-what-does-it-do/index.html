@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Categories &middot; aroul.in</title>
+  <title>JS - What Is Use Strict and What Does It Do &middot; aroul.in</title>
   <meta name="description" content="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -13,12 +13,11 @@
   
   
   <link href="https://aroul.in/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://aroul.in/categories/index.xml" title="aroul.in" />
   
   
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://aroul.in" class="nav-text">aroul.in</a></h1>
   <div class="hamburger-menu">
@@ -34,28 +33,40 @@
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">JS - What Is Use Strict and What Does It Do</h1>
+          <p class="post-date">Posted <time datetime="2019-09-23">Sep 23, 2019</time></p>
+        </header>
         
-        <h1 class="list-header-title">Categories</h1>
-      </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/js_hua212ff8afb7c705dde0ab10d0ab6d44b_38740_800x0_resize_q75_lanczos.jpg">
+          <img src="https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/js_hua212ff8afb7c705dde0ab10d0ab6d44b_38740_800x0_resize_q75_lanczos.jpg" >
+        </picture>
+        
+        <p>The keyword <!-- raw HTML omitted -->'use strict'<!-- raw HTML omitted --> means that the JavaScript engine will be pickier about certain things we do when we write code.</p>
+<p>It turns on the strict mode operating context wherever you place it (inside of a function will activate strict mode on the function level scope) including:</p>
+<ul>
+<li>Using a variable before it’s defined now causes an error.</li>
+<li>It stops you from using words that are reserved for future versions of JS.</li>
+<li>You cannot delete functions, variables or functions arguments in  “use strict” mode</li>
+<li>Makes eval a bit safer to use (doesn’t let variables escape)</li>
+<li>So, in strict mode, if <!-- raw HTML omitted -->this<!-- raw HTML omitted --> was not defined by the execution context, it remains <!-- raw HTML omitted -->undefined<!-- raw HTML omitted -->.</li>
+</ul>
+
+      </article>
       
-      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://aroul.in/categories/js/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">JS</h2>
-    <p class="card-text"></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2020-04-13">Apr 13, 2020</time></p>
-      
-    </div>
-  </article>
+  href="https://aroul.in" class="card home-card" style="background-image: url( https://aroul.in/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
 </a>
-    </main>
-    
+    </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"

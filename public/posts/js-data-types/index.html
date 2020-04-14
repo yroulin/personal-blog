@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JS - Data Types &middot; aroul.in</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  <link href="https://aroul.in/css/concated.min.css" rel="stylesheet">
+  
+  
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://aroul.in" class="nav-text">aroul.in</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://aroul.in" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://aroul.in/categories/js" class="hamburger-menu-overlay-link">Js</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">JS - Data Types</h1>
+          <p class="post-date">Posted <time datetime="2019-09-27">Sep 27, 2019</time></p>
+        </header>
+        
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://aroul.in/posts/js-data-types/js_hua212ff8afb7c705dde0ab10d0ab6d44b_38740_800x0_resize_q75_lanczos.jpg">
+          <img src="https://aroul.in/posts/js-data-types/js_hua212ff8afb7c705dde0ab10d0ab6d44b_38740_800x0_resize_q75_lanczos.jpg" >
+        </picture>
+        
+        <p>JavaScript has 8 built-in data types (with the latest ECMAScript standard):</p>
+<ul>
+<li>
+<p>We have the <strong>Primitives</strong> ones:</p>
+<ul>
+<li>Null</li>
+<li>Boolean</li>
+<li>Undefined</li>
+<li>Number</li>
+<li>BigInt</li>
+<li>String</li>
+<li>Symbol</li>
+</ul>
+</li>
+<li>
+<p>and the <strong>Objects</strong>.</p>
+</li>
+</ul>
+<p>And you can check the type of each data type with the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">typeof</a></strong> operator:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">helloMessage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello World&#34;</span>;
+<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">helloMessage</span>); <span style="color:#75715e">//Output: &#34;string&#34;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">myAge</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">32</span>;
+<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">myAge</span>); <span style="color:#75715e">//Output: &#34;number&#34;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">myPerson</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Yves&#39;</span>,
+    <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">32</span>,
+}
+<span style="color:#66d9ef">typeof</span>(<span style="color:#a6e22e">myPerson</span>); <span style="color:#75715e">//Output: &#34;object&#34;
+</span></code></pre></div><p>We have also have <strong>undefined</strong> and <strong>undeclared</strong> which is basically when you define a variable without a value (the default value is <!-- raw HTML omitted --><strong>undefined</strong><!-- raw HTML omitted -->). And <strong>undeclared</strong> is just that the value hasn't been never declared.</p>
+<p><!-- raw HTML omitted -->Useful Resources<!-- raw HTML omitted -->:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">MDN JS Data Structures</a></li>
+<li><a href="https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/types-grammar">You Don't Know JS Yet: Types &amp; Grammar Second Edition (WIP)</a></li>
+</ul>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/js.jpg">
+      <img src="https://aroul.in/posts/what-is-use-strict-and-what-does-it-do/js.jpg" class="card-img" >
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">JS - What Is Use Strict and What Does It Do</h2>
+    <p class="card-text">The keyword 'use strict'means that the JavaScript engine will be pickier about certain things we do when we write code.
+It turns on the strict mode operating context wherever you place it (inside of a function will activate strict mode on the function level scope) including:
+ Using a variable before it’s defined now causes an error. It stops you from using words that are reserved for future versions of JS.</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-09-23 923:00">Sep 23, 2019</time></p>
+      <p>#JS </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://aroul.in" class="card home-card" style="background-image: url( https://aroul.in/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://aroul.in/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>
