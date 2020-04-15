@@ -29,6 +29,8 @@ hugo server -D
 
 Navigate to your new site at http://localhost:1313/.
 
+When you want to publish your page just add, commit and push.
+
 # Mastering Markdown:
 https://guides.github.com/features/mastering-markdown/
 
