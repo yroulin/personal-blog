@@ -19,7 +19,7 @@ The forEach() function is used to iterates through all the entries of the array.
 ES5 Example:
 
 ```
-var colors = ['red',’blue','green'];
+var colors = ['red','blue','green'];
 ```
 
 ```
@@ -158,4 +158,28 @@ console.log(numbers):
 (3) [1, 2, 3]
 console.log(doubled):
 (3) [2, 4, 6]
+```
+
+# Reduce Helper
+
+The reduce() method is used to compact all values in an array down to a single value.
+
+This is a very basic example:
+
+```
+const bill = [39.85, 42.99, 49.99];
+```
+
+```
+<script>
+const sum = bill.reduce((total, amount) => {
+    return total + amount;
+});
+</script>
+```
+
+**Output**:
+
+```
+132.83
 ```
