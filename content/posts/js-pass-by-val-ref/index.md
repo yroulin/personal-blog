@@ -1,7 +1,7 @@
 ---
 title: "JS - Pass by Value or by Reference"
 date: 2021-03-20T22:42:04-06:00
-draft: true
+draft: false
 dropCap: false
 categories: ["JS"]
 resources:
