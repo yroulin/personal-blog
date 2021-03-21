@@ -4,6 +4,10 @@ date: 2021-03-20T22:42:04-06:00
 draft: true
 dropCap: false
 categories: ["JS"]
+resources:
+- name: featuredImage
+  src: "js.jpg"
+  params: "JavaScript logo"
 ---
 
 Primitives types such as: Strings, numbers, boolean, undefined, null and symbol (ES6) are passed by **value** (You are passing a **COPY**) 
