@@ -3,3 +3,7 @@ languageCode = "en-us"
 title = "aroul.in"
 theme = "aether"
 description = "This is my personal blog for writing about coding"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
