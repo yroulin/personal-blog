@@ -10,4 +10,6 @@ resources:
     params: "Shooter Game Image"
 ---
 
+Here can you test my first Pico-8 Game:
+
 <iframe src="/pico8/main.html" width="640" height="512" frameborder="0"></iframe>
